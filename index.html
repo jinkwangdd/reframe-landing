@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Re:Frame - AI와 함께하는 인지재구성</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            padding: 60px 0 40px;
+            color: white;
+        }
+
+        .header h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .header p {
+            font-size: 1.3rem;
+            opacity: 0.9;
+            margin-bottom: 30px;
+        }
+
+        .download-btn {
+            display: inline-block;
+            background: #007AFF;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,122,255,0.3);
+        }
+
+        .download-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,122,255,0.4);
+        }
+
+        .features {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .features h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            color: #333;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .feature-card {
+            text-align: center;
+            padding: 30px;
+            border-radius: 15px;
+            background: #f8f9fa;
+            transition: transform 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .feature-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .feature-card p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .app-preview {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .app-preview img {
+            max-width: 300px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .contact {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            margin: 40px 0;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .contact h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .contact p {
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .contact-email {
+            color: #007AFF;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 40px 0;
+            color: white;
+            opacity: 0.8;
+        }
+
+        .footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2.5rem;
+            }
+            
+            .header p {
+                font-size: 1.1rem;
+            }
+            
+            .features {
+                padding: 20px;
+            }
+            
+            .feature-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Re:Frame</h1>
+            <p>AI와 함께하는 인지재구성</p>
+            <a href="https://apps.apple.com/app/reframe" class="download-btn">App Store에서 다운로드</a>
+        </div>
+
+        <div class="features">
+            <h2>주요 기능</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🧠</div>
+                    <h3>AI 기반 인지재구성</h3>
+                    <p>GPT-4 기술을 활용한 전문적인 인지행동치료로 부정적인 생각을 긍정적으로 바꿔드립니다.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3>언제 어디서나 접근</h3>
+                    <p>24시간 언제든지 AI 상담사와 대화하며 마음의 안정을 찾을 수 있습니다.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>감정 추적 및 분석</h3>
+                    <p>일일 기분 기록과 감정 변화를 시각적으로 확인하여 자기 이해를 돕습니다.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📸</div>
+                    <h3>스토리 공유</h3>
+                    <p>리프레이밍 결과를 아름다운 이미지로 만들어 인스타그램 스토리에 공유할 수 있습니다.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>완전한 프라이버시</h3>
+                    <p>모든 대화와 데이터는 안전하게 보호되며, 개인정보는 철저히 관리됩니다.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📈</div>
+                    <h3>진행 상황 추적</h3>
+                    <p>리프레이밍 히스토리와 통계를 통해 개선 과정을 한눈에 확인할 수 있습니다.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="app-preview">
+            <img src="https://via.placeholder.com/300x600/667eea/ffffff?text=Re:Frame+App" alt="Re:Frame 앱 미리보기">
+        </div>
+
+        <div class="contact">
+            <h2>지원 및 문의</h2>
+            <p>앱 사용 중 궁금한 점이나 문제가 있으시면 언제든 연락주세요.</p>
+            <a href="mailto:support@reframe-app.com" class="contact-email">support@reframe-app.com</a>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2024 Re:Frame. All rights reserved.</p>
+            <div>
+                <a href="/privacy">개인정보처리방침</a>
+                <a href="/terms">이용약관</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 
